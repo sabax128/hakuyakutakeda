@@ -17,12 +17,52 @@
         }
 
         body {
-        font-family: 'wapuro-mincho', sans-serif;
+            background-color: #c0c0c0;
+            font-family: 'wapuro-mincho', sans-serif;
         }
+
+        .word-processor {
+            background: #aaaaaa;
+            padding: 16px;
+            border: 4px ridge #888;
+            box-shadow: inset -2px -2px 4px #888, inset 2px 2px 4px #fff;
+        }
+
+        .screen {
+            background-color: #ffffee;
+            color: #000;
+            height: 300px;
+            padding: 12px;
+            border: 2px inset #666;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-y: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .word-processor {
+                padding: 8px;
+            }
+            .screen {
+                height: auto;
+            }
+            h1 {
+                font-size: 4vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <p>現在サイト工事中です！</p>
+    <div class="word-processor">
+        <div class="screen">
+            <h1>Welcome to hakuyakutakeda.com!!</h1>
+            <p>サイトただいま絶賛工事中!!</p>
+            <p>ご迷惑をおかけしますが、完成までしばらくお待ちください</p>
+        </div>
+    </div>
 </body>
 </html>
